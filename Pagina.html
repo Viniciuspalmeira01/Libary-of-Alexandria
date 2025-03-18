@@ -3,32 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libary of alexandria | E-commerc</title>
-    <link rel="stylesheet" href="C:\Users\vinic\OneDrive\Área de Trabalho\libary of alexandria\HTML's\paginainicial.css"> <!-- Referência ao CSS -->
+    <title>Library of Alexandria | E-commerce</title>
+    <link rel="stylesheet" href="paginainicial.css"> <!-- Referência ao CSS com caminho relativo -->
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <h1 class="logo">Alexandria<span>STORE</span></h1>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Produtos</li>
-                    <li>Contato</li>
-                    <li>Conta</li>
-                    <li>Sobre</li>
-                </ul>
-            </nav>
+        <nav class="navbar">
+            <h1 class="logo">Alexandria <span>STORE</span></h1>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#categorias">Categorias</a></li>
+                <li><a href="#conta">Conta</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
             <div class="icons">
-                <img src="imagens/menu.png" alt="Menu">
-                <img src="imagens/cart.png" alt="Carrinho">
+                <img src="imagens/cart.png" alt="Carrinho de compras" class="cart-button">
+                <img src="imagens/menu.png" alt="Menu" class="menu-button">
             </div>
-        </div>
+        </nav>
     </header>
-    
+   
     <main class="container">
-        <h2>Bem-vindo à Alexandria Store</h2>
-        <p>Descubra os melhores livros em domínio público e contribua com a comunidade!</p>
+        <section id="home">
+            <h2>Bem-vindo à Alexandria Store</h2>
+            <p>Descubra os melhores livros em domínio público e contribua com a comunidade!</p>
+        </section>
+
+        <section id="produtos" class="Ofertas">
+            <nav class="Produtos">
+                <h2>Produtos</h2>
+            <div class="cards">
+                <ul>
+                    <div class="card1">
+                    <img src="imagens/book1.jpg" alt="Livro 1">
+                    <h3>Nome do Livro</h3>
+                    <p>Descrição do Livro</p>
+                    <p id="preço1">R$ 00,00</p>
+                    <button id="B1">Adicionar ao Carrinho</button>
+                </div>
+                <div class="card2">
+                    <img src="imagens/book2.jpg" alt="Livro 2">
+                    <h3>Nome do Livro</h3>
+                    <p>Descrição do Livro</p>
+                    <p id="preço2">R$ 00,00</p>
+                    <button id ="B2">Adicionar ao Carrinho</button>
+                </div>
+                <div class="card3">
+                    <img src="imagens/book3.jpg" alt="Livro 3">
+                    <h3>Nome do Livro</h3>
+                    <p>Descrição do Livro</p>
+                    <p id="preço3">R$ 00,00</p>
+                    <button id="B3">Adicionar ao Carrinho</button>
+                </div>
+                <div class="card4">
+                    <img src="imagens/book4.jpg" alt="Livro 4">
+                    <h3>Nome do Livro</h3>
+                    <p>Descrição do Livro</p>
+                    <p id="preço4">R$ 00,00</p>
+                    <button id="B4">Adicionar ao Carrinho</button>
+                </ul>
+                </div>
+            </nav>
+            </div>
+        </section>
     </main>
 </body>
 </html>
